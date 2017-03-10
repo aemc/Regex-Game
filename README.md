@@ -6,5 +6,9 @@
 * The player is able to adjust the difficulty by including/excluding anchors, digits, or letters.
 
 # Installation
-* Download the source code and upload into any android device to play
+* Download the source code and upload into any android device to play.
+
+# Built With
+* Java 
+* Android Studio
 
