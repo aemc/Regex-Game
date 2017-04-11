@@ -1,4 +1,4 @@
-package ca.roumani.rex1;
+package ca.aemc.rex1;
 
 import org.junit.Test;
 

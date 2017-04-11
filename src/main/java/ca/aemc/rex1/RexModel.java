@@ -1,4 +1,4 @@
-package ca.roumani.rex1;
+package ca.aemc.rex1;
 
 import java.util.Random;
 
@@ -139,6 +139,7 @@ public class RexModel{
         }
     }
 
+    // model test
     public static void main(String[] args) {
         RexModel model = new RexModel();
         model.setAnchor(true);

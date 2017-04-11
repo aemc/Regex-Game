@@ -1,4 +1,4 @@
-package ca.roumani.rex1;
+package ca.aemc.rex1;
 
 public class ScoreModel
 {
@@ -52,6 +52,7 @@ public class ScoreModel
         startTime = System.currentTimeMillis();
     }
 
+    // score model test
     public static void main(String[] args)
     {
         ScoreModel sm = new ScoreModel();
