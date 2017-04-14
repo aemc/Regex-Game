@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 You will need to have Java and Android Studio installed beforehand. See below for links.
 
 ### Installing
-Clone or download the source code and run within Android Studio program.
+Clone or download the source code and run within Android Studio.
 
 ### Running
 Deploy to an android device running Icecream sandwhich or higher to test.
@@ -29,7 +29,7 @@ Deploy to an android device running Icecream sandwhich or higher to test.
 
 ### Authors
 * **Ammiel Cruz** - Frontend and backend - [aemc](https://github.com/aemc)
-* **Moiz Ali** - backend
+* **Moiz Ali** - Backend
 
 
 
