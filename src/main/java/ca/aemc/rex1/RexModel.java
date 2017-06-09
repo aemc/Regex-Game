@@ -10,6 +10,9 @@ public class RexModel{
     private String regex;
     private Random rng;
 
+    /**
+     * Constructor.
+     */
     public RexModel()
     {
         this.regex = "";
@@ -17,26 +20,48 @@ public class RexModel{
         this.rng = new Random();
     }
 
+    /**
+     * Sets the digit variable.
+     */
     public void setDigit(boolean digit) {
         this.digit = digit;
     }
 
+    /**
+     * Sets the letter variable.
+     */
     public void setLetter(boolean letter) {
         this.letter = letter;
     }
 
+    /**
+     * Sets the anchor variable.
+     */
     public void setAnchor(boolean anchor) {
         this.anchor = anchor;
     }
 
+    /**
+     * Returns the regex string of the current instance.
+     *
+     * @return the regex string of the current instance.
+     */
     public String getRex() {
         return regex;
     }
 
+    /**
+     * Checks to see if the string argument matches the regex string.
+     *
+     * @return a boolean value that evaluates whether the string argument matches the regex string.
+     */
     public boolean doesMatch(String s) {
         return s.matches(regex);
     }
 
+    /**
+     * Generates the regex string.
+     */
     public void generate(int repeat) {
         this.regex = "";
         if (anchor == true)
@@ -53,6 +78,9 @@ public class RexModel{
         }
     }
 
+    /**
+     * Generates the digit portion of the regex string.
+     */
     private void genDigit() {
         double check = rng.nextDouble();
         String str = "";
@@ -80,6 +108,9 @@ public class RexModel{
         }
     }
 
+    /**
+     * Generates the letter portion of the regex string.
+     */
     private void genLetter() {
         double check = rng.nextDouble();
         double check2 = rng.nextDouble();
@@ -121,6 +152,9 @@ public class RexModel{
         }
     }
 
+    /**
+     * Generates the quantifier portion of the regex string.
+     */
     private void genQuantifier() {
         double check = rng.nextDouble();
         if (check < 0.5) {
@@ -147,6 +181,5 @@ public class RexModel{
         model.setDigit(false);
         model.generate(2);
         System.out.println("rex: "+ model.getRex());
-
     }
 }
